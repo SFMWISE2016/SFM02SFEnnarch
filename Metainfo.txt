@@ -1,0 +1,9 @@
+Name of QuantLet : SFM02SFEnnarch
+Published in: Statistics of Financial Markets
+Description: 'Shows the conditional volatilities estimated from the log returns of the exchange rate time series BP/USD together with some financial indicators using RBF (radial basis function) neural networks considering 3 periods of time dependency.'
+Keywords: data visualization, exchange-rate, graphical representation, log-returns, neural-network, RBF, net work, volatility
+See also: SFEnnjpyusd, SFEnnjpyusd
+Author: SMF.Group02
+Submitted: Sun, July 17 2016 by SFM.Group02
+Datafiles: SFM02.csv
+Example: 'Plots log returns of exchange rate BP/USD and conditional volatility estimated using RBF neural networks for an AR(3)-ARCH(3) process with yields on 10 yrs. german bonds and log returns on Krugerrand gold as financial indicators.'
