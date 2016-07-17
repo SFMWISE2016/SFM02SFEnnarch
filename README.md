@@ -20,7 +20,7 @@ Submitted : Sun, July 17 2016 by SFM.Group02
 
 ```
 
-![Picture1](SFM02.png)
+![Picture1](Rplot02.png)
 
 
 ```r
