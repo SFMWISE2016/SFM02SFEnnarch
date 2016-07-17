@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usetikzlibrary{arrows,shapes}
+\usepackage{amsmath}
+\usepackage{eurosym}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{graphicx} 
+\usepackage{booktabs}
+\author{SFM.Group02}
+\title{Application of RBF Neural Networks}
+\begin{document}
+\begin{spacing}{2.0}
+\maketitle
+	\tableofcontents
+	\newpage
+\section{Motivation}
+\textbf{Definition}:
+A neural network is a nonlinear system that maps input variables $x_{1},...,x_{p}$ onto output variables $y_{1},...,y_{q},$i.e it is a nonlinear function
+$$\nu:R^{p}\longrightarrow R^{q}$$
+$$(y_{1},...,y_{q})=\nu(x_{1},...,x_{p}).$$
+If one use symmetric kernel functions, e.g. normal-CDF, in this case we speak about RBF-networks.\\
+\textbf{Objectives}:
+\begin{itemize}
+	\item Quantify the risk of an asset using nonlinear $AR(p)-ARCH(q)$ model
+	\item Estimate the conditional volatility using RBF neaural network, which could be seen as a good meassurement for risk
+	\item Illustrate the application of Neural Networks
+\end{itemize}
+We want to estimate the conditional volatility of the exchange rate of BP/USD using the AR(p)-ARCH(q) model and the approach of RBF neural networks to find illustrate the valid application of RBF neural networks.
+\section{Methodology}
+The main approach is the combination of the nonlinear AR(p)-ARCH(q) model and RBF neural networks. Also, a large part that why we could do this easily is contributed by Github, which helped a lot in instruction and documentation.
+\section{Data}
+We used 4 series data, namely the exchange rate BP/USD, Jerman 10 year bond yields, gold Krugerrand(SF/Oz) and Cmomerzbank stocks. Honestly, this is a very challenging part because the data is so hard to get. The original data set on the Github is from 1997 to 2002, which is very old. After several days' struggling, we finanlly get the data we want from May 8th,2005 to July 8th,2016, almost 11 years' sample obversations, which doubles the original sample size.  Datas can be find on Yahoo finance, WIND and Datastream.
+\section{Empirical Results}
+\textbf{Figure 1}
+\includegraphics[height=7cm]{"Rplot"}\\
+\textbf{Figure2}
+\includegraphics[height=7cm]{"Rplot01"}\\
+\textbf{Figure3}
+\includegraphics[height=7cm]{"Rplot02"}
+\section{Conclusion}
+As can be seen from Figure 3, the log return of BP/USD volatiled heavily around the year 2009, which may be caused by the 2008 finance crisis. And The corresponding estimated conditional volatility of BP/USD is large around the year 2009, which is consistent with the heavily volatiled log returns around 2009. Further more, the estimated conditional volatility using RBF neural networks has a approximately decline trend, consistent with the fact that the fiancial environment is more stable than that before 2008. Tish provide a valid application of RBF neural networks.
+\end{spacing}
+\end{document}

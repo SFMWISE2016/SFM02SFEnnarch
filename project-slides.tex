@@ -1,0 +1,126 @@
+\documentclass[12pt]{beamer}
+\mode<presentation> {
+	\renewcommand{\familydefault}{\rmdefault}
+	\usetheme{CambridgeUS}
+	\usepackage[latin1]{inputenc}
+	\usefonttheme{professionalfonts}
+	\usepackage{times}
+	\usepackage{tikz}
+	\usepackage{amsmath}
+	\usepackage{verbatim}
+	\usepackage{enumerate}
+	\usepackage{setspace}
+	\usetikzlibrary{arrows,shapes}
+	\usepackage{amsmath}
+	\usepackage{eurosym}
+	\usepackage{framed}
+	\usepackage{extarrows}
+}
+\usepackage{graphicx} 
+\usepackage{booktabs}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Application of RBF Neural Networks}
+
+\author[Gu Yanzhao]{Instructor: Prof. H\"{a}rdle} % Your name
+\institute[]{
+	\textsl{Presenter: Gu Yanzhao}\\
+	\textsl{ID: 27720151153545}
+}
+\date[July 16$^{th}, 2016$]{} % Date, can be changed to a custom date
+
+\begin{document}
+	
+\begin{frame}
+	\titlepage 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Outline} 
+	\tableofcontents
+\end{frame}
+
+\section{Motivation}
+\begin{frame}
+	\frametitle{Motivation}
+	\begin{itemize}
+		\item  \textbf{Definition}:\\
+		A neural network is a nonlinear system that maps input variables $x_{1},...,x_{p}$ onto output variables $y_{1},...,y_{q},$i.e it is a nonlinear function
+		$$\nu:R^{p}\longrightarrow R^{q}$$
+		$$(y_{1},...,y_{q})=\nu(x_{1},...,x_{p}).$$
+		\item If one use symmetric kernel functions, e.g. normal-CDF, in this case we speak about RBF-networks.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\item \textbf{Objectives}:\\
+		\begin{itemize}
+			\item [\checkmark] Quantify the risk of an asset using nonlinear $AR(p)-ARCH(q)$ model
+			\item [\checkmark] Estimate the conditional volatility using RBF neaural network, which could be seen as a good meassurement for risk
+			\item [\checkmark] Illustrate the application of Neural Networks
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\section{Methodology}
+\begin{frame}
+	\frametitle{Methodology}
+	\begin{itemize}
+		\item QuantNet-open access code-sharing platform
+		\item Quantlet-statistics-related document and program code
+		\item Nonlinear $AR(p)-ARCH(q)$ model and RBF neural network
+	\end{itemize}
+	
+\end{frame}
+
+\section{Data}
+\begin{frame}
+	\frametitle{Data}
+	\textbf{Data Set}:
+	\begin{itemize}
+		\item BP/USD
+		\item Jerman 10 year bond yields
+		\item gold Krugerrand (SF/Oz)
+		\item Commerzbank stocks\\
+	\end{itemize}
+	\textbf{Remark}:The time interval of the 4 series data is from May.8th,2005 to July.8th,2016, counting for 2895 observations. 
+\end{frame}
+
+\section{Emprical Results}
+\begin{frame}
+	\frametitle{Emprical Results}
+	\textbf{Figure 1}
+	\includegraphics[height=7cm]{"Rplot"}
+\end{frame}
+\begin{frame}
+	\textbf{Figure2}
+	\includegraphics[height=7cm]{"Rplot01"}
+\end{frame}
+\begin{frame}
+	\textbf{Figure3}
+	\includegraphics[height=7cm]{"Rplot02"}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+	\frametitle{Conclusions}
+	\begin{itemize}
+		\item The log return of BP/USD volatiled heavily around the year 2009(after the crisis)
+		\item The corresponding estimated conditional volatility of BP/USD is large around the year 2009
+		\item The estimated conditional volatility of BP/USD has a decline trend
+	\end{itemize}
+	\textbf{Conclusion}:The conditional volatility, estimated using RBF neural network, is consistent with the real data of BP/USD.
+\end{frame}
+
+\section{}
+\begin{frame}
+	\frametitle{ }
+		\Huge{\centerline{Thanks!}}
+\end{frame}
+	
+	%----------------------------------------------------------------------------------------
+\end{document} 
